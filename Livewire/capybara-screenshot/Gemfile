@@ -1,0 +1,17 @@
+source 'https://rubygems.org'
+gem 'rake'
+gem 'sinatra'
+gem 'shotgun'
+gem 'cucumber'
+gem 'selenium-webdriver'
+gem 'pry'
+gem 'rspec'
+gem 'webdrivers', '~> 4.0'
+gem 'capybara-screenshot', :group => :test
+
+
+# whilst dependencies should be defined in Gemspec, to build this gem the version needs to be enforced
+gem 'nokogiri', '~> 1.6' # force older version of Nokogiri that works with Ruby 1.8
+gem 'capybara', '~>3.30' # force older version of Capybara that works with Ruby 1.8
+
+# Specify your gem's dependencies in capybara-screenshot.gemspec
